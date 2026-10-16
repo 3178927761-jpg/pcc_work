@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PyCharm (.idea 只对本机有意义)
+.idea/
+
