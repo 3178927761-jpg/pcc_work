@@ -18,39 +18,39 @@ class Dog:
 # 创建类的对象的过程：类的实例化：new 类()
 
 alex = Dog()
-peiQi = Dog()
+pei_qi = Dog()
 
-# (1) alex和peiQi的内存地址一样吗？ --不一样
+# (1) alex和pei_qi的内存地址一样吗？ --不一样
 print(id(alex))
-print(id(peiQi))
-print(alex==peiQi)
+print(id(pei_qi))
+print(alex==pei_qi)
 # (2)实例对象通过句点符号调用类的属性和方法
 print(alex.legs_num)
 print(alex.has_hair)
 alex.bark()
 # (3) 调用类属性一定是同一空间值
 print((id(alex.legs_num)))
-print((id(peiQi.legs_num)))
+print((id(pei_qi.legs_num)))
 print((id(alex.bark)))
-print(id(peiQi.bite))
+print(id(pei_qi.bite))
 
 # 实例属性赋值：实例对象.属性 = 值   向实例空间写入或修改属性和值
 alex.name = "李杰"
 alex.age = 10
 print(alex.name)
-peiQi.name = "武大郎"
-peiQi.age = 8
-print(peiQi.name)
+pei_qi.name = "武大郎"
+pei_qi.age = 8
+print(pei_qi.name)
 
 # (1)
 alex.age = 30
 print(alex.age)
-print(peiQi.age)
+print(pei_qi.age)
 
 # (2)实例对象.变量  查询顺序 [实例空间，类空间，父类空间]
 # alex.bark()
 alex.bark = 1000
-peiQi.bark()
+pei_qi.bark()
 
 alex.legs_num = 5
 print(alex.legs_num)
@@ -59,7 +59,7 @@ print(alex.legs_num)
 # (1) self每次都代表调用的对象
 """print("alex:::",alex)
 alex.bark()
-peiQi.bark()
+pei_qi.bark()
 
 alex.bite("yuan")
 alex.bite("huang")"""
