@@ -16,9 +16,7 @@ class Course:
         for student in self.students:
             if student.is_honor(line):
                 names.append(student.name)
-            else:
-                return names
-        return names
+        return name
 
 
 def main():
@@ -30,7 +28,6 @@ def main():
     ]
     course = Course(students)
     print("荣誉名单：", course.honor_names())
-
 
 if __name__ == "__main__":
     main()
